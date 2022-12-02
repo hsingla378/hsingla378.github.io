@@ -242,7 +242,7 @@ h3 {
         background: rgb(88, 93, 254);
         background: linear-gradient(294deg, rgba(88, 93, 254, 1) 0%, rgba(72, 131, 233, 0.7990546560421043) 100%);
         padding: 10px;
-        border-radius: 20px;
+        border-radius: 10px;
         margin: auto;
     }
 
@@ -415,10 +415,8 @@ li {
 header{
     background-color:#4883E9; 
     padding: 10px 0;
-    /* border-bottom: black solid 1px; */
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     top: 0;
-    margin-bottom: 50px;
 }
 
 nav{
@@ -430,7 +428,7 @@ nav{
 }
 
 #site-tittle a{
-    padding: 21px 20px;
+    padding: 20px;
     text-decoration: none;
     color:white;
     font-size: 30px;
@@ -438,7 +436,7 @@ nav{
 }
 
 nav div a{
-    padding: 21px 20px;
+    padding: 20px;
     text-decoration: none;
     color:white;
     font-size: 22px;
@@ -468,6 +466,11 @@ nav div li{
         justify-content: center;
         align-items: center;
         max-width: 100%;
+    }
+    
+    nav div ul{
+        display: flex;
+        justify-content: center;
     }
     
     #site-tittle{
