@@ -87,51 +87,24 @@ h3 {
 
 @media screen and (max-width: 1200px) {
     #hero {
-        display: flex;
         justify-content: center;
         max-width: 100%;
     }
 
-    #hero-right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-    }
-
-    #hero-img {
-        border-radius: 50%;
-        margin: auto;
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 850px) {
     #hero {
-        display: flex;
         justify-content: center;
         flex-direction: column-reverse;
-        max-width: 85%;
         margin: 50px auto;
     }
 
     #hero-left {
         max-width: 100%;
-        margin: 0 auto;
         text-align: center;
     }
 
-    #hero-right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #hero-img {
-        border-radius: 50%;
-        margin: auto;
-        width: 50%;
-    }
 }
 
 #hero-before-heading {
@@ -188,18 +161,14 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    
-.hero-data-heading {
-    display: inline;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-}
 
-.hero-data-text {
-    font-size: 8px;
-    margin: 0;
-}
+    .hero-data-heading {
+        font-size: 30px;
+    }
+
+    .hero-data-text {
+        font-size: 8px;
+    }
 }
 
 
@@ -222,32 +191,6 @@ h3 {
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
 }
 
-@media screen and (max-width: 768px) {
-    #skills {
-        display: grid;
-        gap: 30px;
-        justify-content: center;
-        grid-template-columns: 20% 20% 20% 20%;
-    }
-
-    .skill p {
-        display: flex;
-        justify-content: center;
-        color: #0d43a0;
-        font-size: 12px;
-    }
-
-    .skill img {
-        max-width: 75%;
-        background: rgb(88, 93, 254);
-        background: linear-gradient(294deg, rgba(88, 93, 254, 1) 0%, rgba(72, 131, 233, 0.7990546560421043) 100%);
-        padding: 10px;
-        border-radius: 10px;
-        margin: auto;
-    }
-
-}
-
 .skill {
     display: flex;
     justify-content: center;
@@ -262,12 +205,29 @@ h3 {
 }
 
 .skill img {
-    max-width: 50%;    
+    max-width: 40%;
     background: rgb(88, 93, 254);
     background: linear-gradient(294deg, rgba(88, 93, 254, 1) 0%, rgba(72, 131, 233, 0.7990546560421043) 100%);
     padding: 10px;
     border-radius: 20px;
     margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #skills {
+        justify-content: center;
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+
+    .skill p {
+        font-size: 12px;
+    }
+
+    .skill img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
 }
 
 
@@ -321,7 +281,6 @@ li {
     background-color: white;
     padding: 8px 10px;
     margin: 5px;
-    /* border: 1px solid black; */
     border-radius: 5px;
 }
 
@@ -343,35 +302,19 @@ li {
 
     #project-section {
         max-width: 100%;
-        margin: 50px auto;
     }
 
     .project {
-        display: flex;
-        justify-content: center;
         flex-direction: column-reverse;
         text-align: center;
-        max-width: 75%;
-        margin: 50px auto;
-        grid-template-columns: 60% 40%;
-        background-color: #F1F1FA;
-        border-radius: 20px;
-        padding: 25px;
-    }
-
-    .project-img {
-        width: 70%
     }
 
     .project h3 {
         margin: auto;
-        line-height: 40px;
         text-align: center;
     }
 
     .project-date {
-        color: #3c3c3c;
-        line-height: 24px;
         display: flex;
         justify-content: center;
     }
@@ -380,46 +323,19 @@ li {
     li {
         text-align: left;
         font-size: 14px;
-        line-height: 22.75px;
-    }
-
-
-    .project-skill {
-        font-family: 'Nunito', sans-serif;
-        display: inline-block;
-        font-size: 12px;
-        color: black;
-        background-color: white;
-        padding: 8px 10px;
-        margin: 5px;
-        /* border: 1px solid black; */
-        border-radius: 5px;
-    }
-
-    .project-link-btn {
-        margin: 20px auto;
-        font-size: 14px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold;
-        color: #0d43a0;
-        border: 2px solid #0d43a0;
-        background-color: white;
-        border-radius: 30px;
-        padding: 20px 40px;
-        cursor: pointer;
     }
 }
 
 /* Navbar */
 
-header{
-    background-color:#4883E9; 
+header {
+    background-color: #4883E9;
     padding: 10px 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     top: 0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -427,53 +343,53 @@ nav{
     max-width: 85%;
 }
 
-#site-tittle a{
+#site-tittle a {
     padding: 20px;
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 30px;
     font-weight: bold;
 }
 
-nav div a{
+nav div a {
     padding: 20px;
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 22px;
     font-weight: 500;
 }
 
-nav div a:hover{
+nav div a:hover {
     text-decoration: underline;
 }
 
-nav div ul{
+nav div ul {
     display: flex;
     justify-content: right;
 }
 
-nav div li{
+nav div li {
     list-style: none;
 }
 
 @media screen and (max-width: 900px) {
-    header{
+    header {
         margin-bottom: 70px;
     }
 
-    nav{
+    nav {
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 100%;
     }
-    
-    nav div ul{
+
+    nav div ul {
         display: flex;
         justify-content: center;
     }
-    
-    #site-tittle{
+
+    #site-tittle {
         display: none;
     }
 }
